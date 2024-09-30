@@ -1,0 +1,113 @@
+/* Center the content */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #222;
+  background-size: cover;
+  background-position: center;
+  font-size: 120%;
+  background-image: url(https://pngtree.com/free-backgrounds-photos/weather);
+}
+
+/* Card container */
+.card {
+  background: rgba(179, 52, 130, 0.6); /* Updated background */
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Added shadow */
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Card hover effect */
+}
+
+/* Search section */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: rgba(124, 124, 124, 0.5);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-family: inherit;
+}
+
+button:hover {
+  background: #555;
+  transform: scale(1.1); /* Button hover effect */
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 24px;
+  background: rgba(124, 124, 124, 0.5);
+  font-family: inherit;
+  font-size: 100%;
+  color: white;
+}
+
+/* Weather content */
+.weather {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.weather .city {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.weather .temp {
+  font-size: 3em;
+  margin: 0.5em 0;
+  transition: color 0.5s ease;
+}
+
+/* Change temperature color based on hot or cold weather */
+.temp {
+  color: #ff4747; /* Default warm color */
+}
+
+.temp.cold {
+  color: #00acee; /* Cold color for low temperatures */
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.icon {
+  width: 100px;
+}
+
+/* Footer */
+footer {
+  margin-top: 2em;
+  text-align: center;
+  color: yellowgreen;
+}
+
